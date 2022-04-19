@@ -1,0 +1,14 @@
+.button {
+    width:100%;
+    height: 50px;
+    background-color:$color-orange;
+    border:1px orange solid;
+    margin-top: 3rem;
+    
+}
+
+@media screen and (min-width:960px) {
+    .button {
+        width:200px;
+    }
+}

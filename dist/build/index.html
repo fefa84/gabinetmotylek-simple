@@ -4,20 +4,332 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="./img/logo/favicon.png">
-    <script defer src="bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"
+    integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
+    crossorigin="anonymous"></script>
+    
     <title>Gabinet Motylek</title>
-<script defer src="bundle.3297bf7d3683b7e82398.js"></script><link href="styles.aa76cc497dd1e4346dd3.css" rel="stylesheet"></head>
+<script defer src="bundle.69a54123ac0c2e100e7b.js"></script><link href="main.703dc78644151ba9bb26.css" rel="stylesheet"></head>
 <body>
-    <header>
-        <nav>
-            <img src="./img/logo/logoMotylekKolor.svg" alt="logo Motylek">
-            <ul>
-                <li></li>
+    <header class="header">
+        <nav class="nav-bar">
+            <a href="index.html"><img class="logo" src="./img/logo/logoMotylekKolor.svg" alt="logo Motylek"></a>
+            
+            <ul class="menu">
+                <a href=""><li class="menu__item">O nas</li></a>
+                <a href=""><li class="menu__item">Aktualności</li></a>
+                <a href="#offer"><li class="menu__item">Oferta</li></a>
+                <a href=""><li class="menu__item">Zespół</li></a>
+                <a href="contact.html"><li class="menu__item">Kontakt</li></a>
             </ul>
+            <div class="social-media">
+                <a href="https://www.facebook.com/Gabinet-Psychoterapii-Sensorycznej-Motylek-108992568396879"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a class="phone" href="#"><i class="fa fa-phone"></i><span>513 389 359</span></a>
+                  
+            </div>
+            <a class="fa fa-bars navigation__switcher navigation__switcher--js" aria-label="Otwórz menu"></a>
         </nav>
+        <div class="line"></div>
+        <ul class="menu__mobile menu__mobile--js">
+            <a class="menu__link" href=""><li class="menu__item menu__mobile--item">O nas</li></a>
+            <a class="menu__link" href=""><li class="menu__item menu__mobile--item">Aktualności</li></a>
+            <a class="menu__link" href="#offer"><li class="menu__item menu__mobile--item" >Oferta</li></a>
+            <a class="menu__link" href=""><li class="menu__item menu__mobile--item">Zespół</li></a>
+            <a class="menu__link" href="contact.html"><li class="menu__item menu__mobile--item">Kontakt</li></a>
+        </ul>
+        <div class="hero-img">
+        
+    </div>
+    <h1 class="heading">Gabinet Psychoterapii Sensorycznej<br> z pracowniami do zajęć specjalistycznych w Ostrołęce</h1>
     </header>
+        <main>
+        <div id="offer" class="offer">
+            <a href="#psych">
+                <div class="offer__card">
+                    <h3 >Gabinet psychologiczny</h2>
+                    <img class="offer__pic" src="img/gpsych1.jpg" alt="gabinet psychologiczny">
+                </div>
+            </a>
+            <a href="#sound">
+                <div class="offer__card">
+                    <h3>Gabinet terapii dzwiękiem</h2>
+                        
+                </div>
+            </a>
+            <a href="">
+                <div class="offer__card">
+                    <h3>Gabinet zabawy i ruchu</h2>
+                    <img class="offer__pic" src="img/gruch.jpg" alt="gabinet zabawy i ruchu">
+                </div>
+            </a>
+            <a href="#integration">
+                <div class="offer__card">
+                    <h3>Gabinet terapii integracji sensorycznej</h2>
+                    <img class="offer__pic" src="img/gsi.jpg" alt="gabinet zabawy i ruchu">
+                </div>
+            </a>
+            <a href="#light">
+                <div class="offer__card">
+                    <h3>Gabinet terapii światłem</h2>
+                    <img class="offer__pic" src="img/gsw.jpg" alt="gabinet zabawy i ruchu">
+                </div>
+            </a>
+            <a href="">
+                <div class="offer__card">
+                    <h3>Wypożyczalnia strojów</h2>
+                    <img class="offer__pic" src="img/wypoz1.jpg" alt="gabinet zabawy i ruchu">
+                </div>
+            </a>
+                
+    
+        </div>
+        <section id="psych">
+            <h2>Gabinet analizy psychologicznej i gabinet masażu uwalniajacego od napięć</h2>
+            <div class="container">
+                
+                    <div class="info">
+                        <h3>Oferuje:</h3>
+                        <div class="info__item">
+                            <img class="punctor" src="./img/logo/logoMotylek.svg" alt="punktor motylek">
+                            <p>konsultacje psychologiczne</p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="info__item">
+                            <img class="punctor" src="./img/logo/logoMotylek.svg" alt="punktor motylek">
+                            <p>wstęp przed diagnoza i do diagnozy psychologicznej, pedagogicznej, integracji sensorycznej</p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="info__item">
+                            <img class="punctor" src="./img/logo/logoMotylek.svg" alt="punktor motylek">
+                            <p>diagnozę pod kątem zaburzeń integracji sensorycznej</p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="info__item">
+                            <img class="punctor" src="./img/logo/logoMotylek.svg" alt="punktor motylek">
+                            <p>masaż głowy, karku, przedramion uwalniajacy do napięć (zwłaszcza dla osób zmagajacych się z ndamiernym napięciem mięsniowym, stresem, siedzacycm trybem pracy)</p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="info__item">
+                            <img class="punctor" src="./img/logo/logoMotylek.svg" alt="punktor motylek">
+                            <p>a także analize indywidualnych potrzeb, trening asertywnosci, trening kreatywnosci oraz inne zajęcia organizowane pod potrzeby podopiecznych gabinetu</p>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    <div class="simple-slider-wrapper">
+                        <div class="control_prev">&#8249;</div>
+                        <div class="control_next"><span>&#8250;</span></div>
+                        <div class="simple-slider-overflow-hidden">
+                            <ul class="simple-slider">
+                                <li class="simple-slider-element 1">
+                                    <image class="slide-image"  src="https://images.unsplash.com/photo-1590508292979-a30664cfdb51"  />
+                                </li>
+                                <li class="simple-slider-element 2">
+                                    <image class="slide-image"  src="https://images.unsplash.com/photo-1548658166-136d9f6a7e76"  />
+                                </li>
+                                <li class="simple-slider-element 3">
+                                    <image class="slide-image"  src="https://images.unsplash.com/photo-1504595403659-9088ce801e29"  />
+                                </li>
+                                <li class="simple-slider-element 4">
+                                    <image class="slide-image"  src="https://images.unsplash.com/photo-1562462863-42d40916e6b8"  />
+                                </li>
+                                <li class="simple-slider-element 5">
+                                    <image class="slide-image"  src="https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a"  />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                
+            </div>    
+               
+        </section>
+
+        
+        <section id="sound">
+            <h2>Gabinet terapii dźwiekiem</h2>
+            <div class="container">
+                
+                <div class="info">
+                    <h3>Gabinet terapii słuchowej</h3>
+                    <p>Terapia słuchowa nazywana także treningiem słuchowym lub terapią zaburzeń procesów przetwarzania słuchowego Terapia ma na celu pomóc w zmniejszeniu nadwrazliwosci na dzwięki, wzmocnieniu pamięci słuchowej, poprawie komunikacji. Pomocna jest także w doskonaleniu umiejętnosci czytania, pisania ze słuchu i uczenia się drogą słuchową, które korzystnie przedładają się na osiąganie lepszych wyników w nauce.
+                    </p>
+                    <div class="info__item">
+                        <img class="punctor" src="./img/logo/logoMotylek.svg" alt="punktor motylek">
+                        <p>trening słuchowy</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="info__item">
+                        <img class="punctor" src="./img/logo/logoMotylek.svg" alt="punktor motylek">
+                        <p>trening uwagi i koncentracji</p>
+                    </div>
+                     
+                </div> 
+                
+                <img class="simple-slider-wrapper simple-slider-wrapper--no-slide" src="./img/sound.jpg" alt="gabinet terapii dźwiękiem"> 
+                
+            </div>
+                    
+        </section>
+        
+        <section id="integration">
+            <h2>Gabinet terapii integracji sensorycznej</h2>
+            <div class="container">
+                
+                <div class="info">
+                    <h3>Sala integracji sensorycznej:</h4>
+                    <p>Terapia integracji sensorycznej nazywana także terapią SI lub terapią zaburzeń procesów integracji sensorycznej.
+                        Terapia Integracji Sensorycznej poprawia funkcjonowanie człowieka w wielu różnych obszarach i aspektach:
+                    </p>
+                     <div class="info__item">
+                        <img class="punctor" src="./img/logo/logoMotylek.svg" alt="punktor motylek">
+                        <p>koordynuje integralność i współpracę zmysłu wzroku, słuchu, węchu, smaku i dotyku,</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="info__item">
+                        <img class="punctor" src="./img/logo/logoMotylek.svg" alt="punktor motylek">
+                        <p>rozwija motorykę małą, dużą, orientację przestrzenną i zdolność do planowania ruchu,</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="info__item">
+                        <img class="punctor" src="./img/logo/logoMotylek.svg" alt="punktor motylek">
+                        <p>integruje czynności odruchowe,</p>
+                    </div>
+                    <div class="divider"></div>
+                        <div class="info__item">
+                        <img class="punctor" src="./img/logo/logoMotylek.svg" alt="punktor motylek">
+                        <p>kontroluje rozwój reakcji równoważnych i poziom napięcia mięśniowego,</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="info__item">
+                        <img class="punctor" src="./img/logo/logoMotylek.svg" alt="punktor motylek">
+                        <p>utrzymuje plastyczność neuronalną, czyli zdolność mózgu do zmian i modyfikacji,</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="info__item">
+                        <img class="punctor" src="./img/logo/logoMotylek.svg" alt="punktor motylek">
+                        <p>w zależności od potrzeb, wycisza lub wzmacnia zaburzone obszary sensoryczne,</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="info__item">
+                        <img class="punctor" src="./img/logo/logoMotylek.svg" alt="punktor motylek">
+                        <p>wspomaga umiejętność czytania, pisania, liczenia, koncentracji uwagi, kontroli emocjonalnej i samoakceptacji,</p>
+                    </div>
+                </div> 
+                
+                
+                <div class="simple-slider-wrapper">
+                        <div class="control_prev"><span></span></div>
+                        <div class="control_next"><span></span></div>
+                        <div class="simple-slider-overflow-hidden">
+                            <ul class="simple-slider">
+                                <li class="simple-slider-element 1">
+                                    <image class="slide-image"  src="https://images.unsplash.com/photo-1590508292979-a30664cfdb51"  />
+                                </li>
+                                <li class="simple-slider-element 2">
+                                    <image class="slide-image"  src="https://images.unsplash.com/photo-1548658166-136d9f6a7e76"  />
+                                </li>
+                                <li class="simple-slider-element 3">
+                                    <image class="slide-image"  src="https://images.unsplash.com/photo-1504595403659-9088ce801e29"  />
+                                </li>
+                                <li class="simple-slider-element 4">
+                                    <image class="slide-image"  src="https://images.unsplash.com/photo-1562462863-42d40916e6b8"  />
+                                </li>
+                                <li class="simple-slider-element 5">
+                                    <image class="slide-image"  src="https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a"  />
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+                    
+        </section>
+        <section id="light">
+            <h2>Gabinet terapii światłem</h2>
+            <div class="container">
+                
+                <div class="info">
+                    <h3>Sala integracji sensorycznej:</h4>
+                    <p>Terapia integracji sensorycznej nazywana także terapią SI lub terapią zaburzeń procesów integracji sensorycznej.
+                        Terapia Integracji Sensorycznej poprawia funkcjonowanie człowieka w wielu różnych obszarach i aspektach:
+                    </p>
+                     <div class="info__item">
+                        <img class="punctor" src="./img/logo/logoMotylek.svg" alt="punktor motylek">
+                        <p>koordynuje integralność i współpracę zmysłu wzroku, słuchu, węchu, smaku i dotyku,</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="info__item">
+                        <img class="punctor" src="./img/logo/logoMotylek.svg" alt="punktor motylek">
+                        <p>rozwija motorykę małą, dużą, orientację przestrzenną i zdolność do planowania ruchu,</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="info__item">
+                        <img class="punctor" src="./img/logo/logoMotylek.svg" alt="punktor motylek">
+                        <p>integruje czynności odruchowe,</p>
+                    </div>
+                    <div class="divider"></div>
+                        <div class="info__item">
+                        <img class="punctor" src="./img/logo/logoMotylek.svg" alt="punktor motylek">
+                        <p>kontroluje rozwój reakcji równoważnych i poziom napięcia mięśniowego,</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="info__item">
+                        <img class="punctor" src="./img/logo/logoMotylek.svg" alt="punktor motylek">
+                        <p>utrzymuje plastyczność neuronalną, czyli zdolność mózgu do zmian i modyfikacji,</p>
+                    </div>
+                    <div class="info__item">
+                        <img class="punctor" src="./img/logo/logoMotylek.svg" alt="punktor motylek">
+                        <p>w zależności od potrzeb, wycisza lub wzmacnia zaburzone obszary sensoryczne,</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="info__item">
+                        <img class="punctor" src="./img/logo/logoMotylek.svg" alt="punktor motylek">
+                        <p>wspomaga umiejętność czytania, pisania, liczenia, koncentracji uwagi, kontroli emocjonalnej i samoakceptacji,</p>
+                    </div>       
+                </div> 
+                
+                
+                <div class="simple-slider-wrapper">
+                        <div class="control_prev"><span></span></div>
+                        <div class="control_next"><span></span></div>
+                        <div class="simple-slider-overflow-hidden">
+                            <ul class="simple-slider">
+                                <li class="simple-slider-element 1">
+                                    <image class="slide-image"  src="https://images.unsplash.com/photo-1590508292979-a30664cfdb51"  />
+                                </li>
+                                <li class="simple-slider-element 2">
+                                    <image class="slide-image"  src="https://images.unsplash.com/photo-1548658166-136d9f6a7e76"  />
+                                </li>
+                                <li class="simple-slider-element 3">
+                                    <image class="slide-image"  src="https://images.unsplash.com/photo-1504595403659-9088ce801e29"  />
+                                </li>
+                                <li class="simple-slider-element 4">
+                                    <image class="slide-image"  src="https://images.unsplash.com/photo-1562462863-42d40916e6b8"  />
+                                </li>
+                                <li class="simple-slider-element 5">
+                                    <image class="slide-image"  src="https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a"  />
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+                    
+        </section>
+    </main>
+    <div class="line"></div>
+    <footer class="footer">
+       
+        <div class="footer__menu">
+            <div>polityka prywatności</div>
+            <div>©2022 Gabinet Psychoterapii sensorycznej / realizacja: solveit.pl </div>
+        </div>
+    </footer>
     
 </body>
 </html>

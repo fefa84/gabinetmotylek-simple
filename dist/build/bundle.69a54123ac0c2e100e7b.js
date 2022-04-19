@@ -104,7 +104,7 @@ eval("\n\n/* eslint-disable */\n\n/**\n * @param {string[]} pathComponents\n * @
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1647430189210\n      var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://gabinetmotylek-simple/./src/sass/main.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n    if(true) {\n      // 1650374657109\n      var cssReload = __webpack_require__(/*! ../../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack://gabinetmotylek-simple/./src/sass/main.scss?");
 
 /***/ }),
 
@@ -285,7 +285,7 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_main_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/main.js */ \"./src/js/main.js\");\n/* harmony import */ var _js_main_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_main_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sass/main.scss */ \"./src/sass/main.scss\");\n\n\n\n//# sourceURL=webpack://gabinetmotylek-simple/./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_main_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/main.js */ \"./src/js/main.js\");\n/* harmony import */ var _js_main_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_main_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sass/main.scss */ \"./src/sass/main.scss\");\n\n\n\n\n//# sourceURL=webpack://gabinetmotylek-simple/./src/app.js?");
 
 /***/ }),
 
@@ -295,7 +295,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_
   \************************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://gabinetmotylek-simple/./src/js/main.js?");
+eval("\njQuery(document).ready(function($) {\n\n  $('.simple-slider-wrapper').each(function() {\n      const this_slider = $(this);\n      \n      const slides = this_slider.find('ul li');\n      const control_prev = this_slider.find('.control_prev');\n      const control_next = this_slider.find('.control_next');\n\n      function slider_init() {\n          if (slides.length > 1) {\n              control_prev.css('display', 'block');\n              control_next.css(\"display\", \"block\");\n          }\n      }\n      slider_init();\n\n      function moveRight() {\n          // move last child to beginning of list and set list position to -100%\n          this_slider.find('ul li:last-child').prependTo(this_slider.find('ul'));\n          slides.css('left', '-100%');\n          // move all list elements to right\n          slides.stop().animate({ left: 0 }, 500);\n      };\n\n      function moveLeft() {\n          // move all list elements to left\n          const arr = [ slides.stop().animate({ left: '-100%' }, 500).promise() ]\n          // after animation end move first child to end of list and set list position to 0\n          $.when.apply($, arr).then(function() {\n              this_slider.find('ul li:first-child').appendTo(this_slider.find('ul'));\n              slides.css('left', 0);\n          });\n      };\n\n      control_prev.on(\"click\", function () {\n          if (slides.length > 1) {\n              moveRight();\n          }\n      });\n\n      control_next.on(\"click\", function () {\n          if (slides.length > 1) {\n              moveLeft();\n          }\n      });\n\n      // autoplay\n      function setAutoplay() {\n          let is_slider_on = true;\n          let autoplay = setInterval(function () {\n              if (slides.length > 1) {\n                  moveLeft();\n              }\n          }, 3000);\n\n          this_slider.on('mouseenter', function() {\n              clearInterval(autoplay);\n              is_slider_on = false;\n          });\n\n          this_slider.on('mouseleave', function() {\n              if (!is_slider_on) {\n                  autoplay = setInterval(function () {\n                      moveLeft();\n                  }, 3000);\n                is_slider_on = true;\n              }\n          });\n      }\n      setAutoplay();\n  });\n\n});\n\nconst navigationSwitcher= document.querySelector('.navigation__switcher--js');\n\nnavigationSwitcher.addEventListener('click', (e)=> {\n    const navigationList=document.querySelector('.menu__mobile--js')\n    navigationList.classList.toggle('menu__mobile--visible')  \n});\n\n\n//# sourceURL=webpack://gabinetmotylek-simple/./src/js/main.js?");
 
 /***/ })
 
@@ -393,7 +393,7 @@ eval("\n\n//# sourceURL=webpack://gabinetmotylek-simple/./src/js/main.js?");
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("5083f7a75d3ccf0b8f1f")
+/******/ 		__webpack_require__.h = () => ("f8d3e6c8dc946d7c18c8")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

@@ -1,5 +1,16 @@
 @import "./abstracts/_variables";
+@import "./abstracts/_mixins";
 @import "./base/_typography";
+@import "./components/_line";
+@import "./components/_punctor";
+@import "./components/_button";
+@import "./layout/_header";
+@import "./layout/_navigation";
+@import "./layout/__footer";
+@import "./pages/_home";
+@import "./pages/_gabpsych";
+@import "./pages/_contact";
+
 
 *,
 *::after,
@@ -19,3 +30,5 @@ body {
     box-sizing: border-box;
     
 }
+
+

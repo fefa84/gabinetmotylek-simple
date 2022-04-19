@@ -1,0 +1,151 @@
+.container {
+    width:85vw;
+    margin:1rem auto;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap:0.5rem;
+  
+}
+
+.container.container--fun {
+  width:100%;
+  grid-template-columns: repeat(1,1fr);
+}
+
+.info {
+    background-color:#FEFFA5;
+    max-width:800px;
+    min-width:300px;
+    max-height:850px;
+   
+    padding:3rem;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    &__item {
+    display:flex;
+    }
+    &--fun {
+      width:100%;
+    }
+    
+}
+
+// .simple-slider-wrapper--no-slide {
+//   width:50%;
+// }
+
+.simple-slider-wrapper {
+  
+  max-width: 800px;
+  min-width:400px;
+  max-height: 850px;
+  position: relative;
+    &--no-slide {
+    margin:0 54px;
+    max-width:700px;
+  }
+    &--fun {
+      width:100%;
+    }
+}
+
+.control_prev,
+.control_next {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99999;
+  width:48px;
+  height: 48px;
+  
+  color:black;
+  text-align: center;
+  padding:4px 0;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 38px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.control_prev {
+  left: 0;
+}
+
+.control_next {
+  right: 0;
+}
+
+// .control_prev span:before,
+// .control_next span:before {
+//   content: "";
+//   width: 48px;
+//   height: 48px;
+//   position: absolute;
+//   padding:4px 0;
+// }
+
+// .control_prev span:before {
+//   background: url('https://www.flaticon.com/svg/static/icons/svg/271/271218.svg');
+//   top: 0;
+//   right: 0;
+// }
+
+// .control_next span:before {
+//   background: url('https://www.flaticon.com/svg/static/icons/svg/271/271226.svg');
+//   top: 0;
+//   left: 0;
+// }
+
+.simple-slider-overflow-hidden {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 0 50px;
+}
+
+.simple-slider {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+}
+
+.simple-slider-element {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-image {
+  object-fit: cover;
+height: 150%;
+width: auto
+}
+
+// @media (max-width:1199px) {
+//   .simple-slider-wrapper {
+//     max-height:550px;
+//   }
+// }
+@media (max-width:959px) {
+  .container {
+      grid-template-columns: repeat(1,1fr);
+      row-gap:6rem;
+     
+  }
+  .simple-slider-wrapper {
+    max-height:500px;
+  
+  }
+}

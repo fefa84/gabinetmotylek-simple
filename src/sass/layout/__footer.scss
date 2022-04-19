@@ -1,0 +1,11 @@
+.footer {
+    height:100px;
+    padding: 1rem 2.5rem;
+    &__menu {
+        height:90px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+}
