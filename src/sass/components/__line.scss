@@ -7,14 +7,9 @@
 }
 
 .divider {
-    margin:2rem 0;
+    margin:1rem 0;
     width:100%;
     height:1px;
     background-color:$color-orange;
 }
 
-@media (max-width:1199px) {
-    .divider {
-        margin:1rem 0;
-    }
-}

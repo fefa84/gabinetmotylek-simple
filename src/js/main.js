@@ -74,9 +74,30 @@ jQuery(document).ready(function($) {
 
 });
 
-const navigationSwitcher= document.querySelector('.navigation__switcher--js');
+// const navigationSwitcher= document.querySelector('.navigation__switcher--js');
 
-navigationSwitcher.addEventListener('click', (e)=> {
-    const navigationList=document.querySelector('.menu__mobile--js')
-    navigationList.classList.toggle('menu__mobile--visible')  
-});
+// navigationSwitcher.addEventListener('click', (e)=> {
+//     const navigationList=document.querySelector('.menu__mobile--js')
+//     navigationList.classList.toggle('menu__mobile--visible') 
+//     const hamburgerIcon=document.querySelector('.fa-bars')
+//     hamburgerIcon.classList.toggle('fa-times')
+// });
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll(".menu__link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}

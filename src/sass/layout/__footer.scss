@@ -1,11 +1,18 @@
 .footer {
-    height:100px;
-    padding: 1rem 2.5rem;
+    height:12vh;
+    padding: 1em 2.5em;
     &__menu {
-        height:90px;
+        
         display:flex;
         justify-content: space-between;
         align-items: center;
     
+    }
+}
+
+@media (max-width:536px) {
+    .footer__menu {
+       flex-direction:column;
+       justify-content:center;
     }
 }
